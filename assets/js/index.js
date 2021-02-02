@@ -16,7 +16,7 @@ $(function () {
 function getUserInfo() {
     $.ajax({
         type: 'GET',
-        url: '/my/userinfo',
+        url: 'my/userinfo',
         success: function (res) {
             if (res.status !== 0) {
                 return layui.layer.msg('获取用户信息失败！')
